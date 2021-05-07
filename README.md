@@ -3,7 +3,7 @@
 ## **About This Repo**                                                                                                                                             
 &emsp;&emsp;All front-end files are here.
 
-&emsp;&emsp;Please Note that you should make changes in **your own branch**.You Can pull your branch with commands:
+&emsp;&emsp;Please NOTE that you should make changes in **your own branch**.You can pull your branch with commands:
 
 ```shell
 git clone .......
