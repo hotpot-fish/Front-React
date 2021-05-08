@@ -4,7 +4,7 @@
 
 <!-- vscode-markdown-toc -->
 * 1. [**About This Repo**](#AboutThisRepo)
-* 2. [**Update Your branch**](#UpdateYourbranch)
+* 2. [**Update Your branch**](#UpdateYourBranch)
 * 3. [**Make A Pull-Request**](#MakeAPull-Request)
 * 4. [**Standards**](#Standards)
 
@@ -31,7 +31,8 @@ git pull
 git branch -a
 ```
 
-##  2. <a name='UpdateYourbranch'></a>**Update Your branch**
+##  2. <a name='UpdateYourBranch'></a>**Update Your Branch**
+
 
 ```shell
 git checkout develop
@@ -79,3 +80,4 @@ git push
  */
 ```
 &emsp;&emsp;Please add simple notes wherever you can!
+
