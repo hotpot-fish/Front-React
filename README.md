@@ -63,7 +63,7 @@ git push
                     Components  :   The minimum parts of a page,like a search bar、a user cell.
                     Containers  :   Containers of Components,like a collection of user cells.
                     View        :   Pages thar can interact with users,like a homepage.
-                    Model       :   Core functions here.Don't put thoes functions thar would be used in several places in a sigle class.
+                    Model       :   Core functions here.Don't put thoes functions that would be used in several places in a sigle class.
                     Services    :   Functions that interact with backend.
 
 
