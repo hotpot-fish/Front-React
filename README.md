@@ -16,7 +16,7 @@ git pull
 git branch -a
 ```
 
-## **Update Your branch**
+## **Update Your Branch**
 
 ```shell
 git checkout develop
