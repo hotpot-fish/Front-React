@@ -1,9 +1,9 @@
 import React from 'react';
-import PaperFrame from "../resultframe";
-import SearchHead from "../head/searchhead";
-import lo from "../../asserts/logo.png"
-import {Logo} from "../tool/logo";
-import ThreeFrame from "../threeframe";
+import PaperFrame from "../Containers/resultframe";
+import SearchHead from "../Components/searchhead";
+import lo from "../../Pic/logo.png"
+import {Logo} from "../Components/logo";
+import ThreeFrame from "../Containers/threeframe";
 
 const logo_info={
     img_src:lo,
