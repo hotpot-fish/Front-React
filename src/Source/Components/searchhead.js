@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-
+import {Button} from 'antd'
+// import "../../CSS/searchhead.css"
+import {SearchOutlined} from '@ant-design/icons'
 class SearchBar extends React.Component{
     constructor(props) {
         super(props);
@@ -15,8 +16,9 @@ class SearchBar extends React.Component{
                 </div>
                 <div className="column">
                     <div className={"field is-grouped"}>
-                        <input className="input is-danger is-inverted" type="text"  style={{width: '40rem'}} placeholder="search papers from all fields of science"/>
-                        <button className="button is-danger">Search</button>
+                        <input className="input is-danger is-inverted" type="text"  style={{width: '40rem' ,height:'45px'}} placeholder="search papers from all fields of science"/>
+                        {/*<button className="button is-danger">Search</button>*/}
+                        <Button  id="SearchButton"  type="primary" shape="round" icon={<SearchOutlined />}  danger>Search</Button>
                     </div>
                 </div>
                 <div className="column">
