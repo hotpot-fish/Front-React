@@ -1,5 +1,5 @@
 import React from 'react';
-import Paper from './tool/singleframe';
+import Paper from '../Components/singleframe';
 
 const paper_info={
     name:"Spectrum of the fully-heavy tetraquark state $QQ\\bar Q' \\bar Q'$",
