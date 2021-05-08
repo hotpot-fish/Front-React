@@ -18,7 +18,7 @@
 ##  1. <a name='AboutThisRepo'></a>**About This Repo**                                                                                                                                             
 &emsp;&emsp;All front-end files are here.
 
-&emsp;&emsp;Please Note that you should make changes in **your own branch**.You Can pull your branch with commands:
+&emsp;&emsp;Please NOTE that you should make changes in **your own branch**.You can pull your branch with commands:
 
 ```shell
 git clone .......
@@ -52,6 +52,7 @@ git push
 
 &emsp;&emsp;Please wait for another member to merge your pull request !
 
+
 ##  4. <a name='Standards'></a>**Standards**
 &emsp;&emsp;Thes src directory has several directories:
 
@@ -80,4 +81,5 @@ git push
  */
 ```
 &emsp;&emsp;Please add simple notes wherever you can!
+
 
