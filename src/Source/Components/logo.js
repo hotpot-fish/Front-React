@@ -7,13 +7,11 @@ class Logo extends React.Component{
     render()
     {
         return(
-            <div className="media">
-                <div className="media-left">
+            <div className="media" >
                     <figure className="image is-64x64">
                         <img  src={this.props.logo.img_src}
-                              alt="Placeholder image" />
+                              alt="Placeholder image"  />
                     </figure>
-                </div>
             </div>
         );
     }

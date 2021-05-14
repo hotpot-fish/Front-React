@@ -4,3 +4,52 @@
     margin-left: 20px;
     font-size: 20px;
 }
+
+.columns
+.search_div{
+    /*搜索组件*/
+    width: 25rem;
+}
+
+.topBarMenu{
+    /*顶部菜单*/
+    font-size: large;
+    color:grey;
+    height: 45px !important;
+}
+.topBarMenu:hover{
+    background-color: grey;
+}
+
+.navbar{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.nav {
+    padding-left: 10px;
+    margin-bottom: 0;
+    list-style: none;
+    float: left;
+}
+
+.nav-cell{
+    float: left;
+    line-height: 45px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    display: flex;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}

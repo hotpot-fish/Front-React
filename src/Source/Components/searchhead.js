@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {Button} from 'antd'
-// import "../../CSS/searchhead.css"
+import {Button,Menu} from 'antd'
+import "../../CSS/searchhead.css"
 import {SearchOutlined} from '@ant-design/icons'
 class SearchBar extends React.Component{
     constructor(props) {
@@ -11,22 +11,39 @@ class SearchBar extends React.Component{
     render()
     {
         return(
-            <div className="columns">
-                <div className="column">
+            <div className="columns" >
+                <div calss="container navbar" style={{width: '40rem' ,height:'45px'}}>
+                        <ul calss="nav">
+                            <li class="nav-cell">
+                                <a href="/">
+                                    Threads
+                                </a>
+                            </li>
+                            <li class="nav-cell">
+                                <a href="/categories/">
+                                    Categories
+                                </a>
+                            </li>
+                            <li className="nav-cell">
+                                <a href="/categories/">
+                                    Categories
+                                </a>
+                            </li>
+                            <li className="nav-cell">
+                                <a href="/categories/">
+                                    Categories
+                                </a>
+                            </li>
+                        </ul>
                 </div>
-                <div className="column">
-                    <div className={"field is-grouped"}>
-                        <input className="input is-danger is-inverted" type="text"  style={{width: '40rem' ,height:'45px'}} placeholder="search papers from all fields of science"/>
-                        {/*<button className="button is-danger">Search</button>*/}
-                        <Button  id="SearchButton"  type="primary" shape="round" icon={<SearchOutlined />}  danger>Search</Button>
-                    </div>
-                </div>
-                <div className="column">
+                <div className="search_div" >
+                        <input className="input is-danger is-inverted" type="text"  style={{width: '60%' ,height:'45px'}} placeholder="search papers from all fields of science"/>
+                        <Button  id="SearchButton"  type="primary" shape="round" icon={<SearchOutlined />}   danger>Search</Button>
                 </div>
             </div>
         );
     }
-}
+};
 
 
 export default class SearchHead extends React.Component{
