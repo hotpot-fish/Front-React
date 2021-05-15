@@ -1,0 +1,26 @@
+.site-layout-content{
+    /*background-color: #61dafb;*/
+    width: 90%;
+    margin:auto;
+}
+
+.PageHead{
+    width: 100%;
+    background-color: aliceblue;
+    height: 140px;
+}
+
+.ContentHead{
+    width: 100%;
+    height: 40px;
+    background-color: antiquewhite;
+}
+
+
+
+
+
+
+
+
+

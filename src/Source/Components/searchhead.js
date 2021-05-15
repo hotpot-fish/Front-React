@@ -12,27 +12,28 @@ class SearchBar extends React.Component{
     {
         return(
             <div className="columns" >
-                <div calss="container navbar" style={{width: '40rem' ,height:'45px'}}>
+                <div calss="container navbar-nav" style={{height:'45px' }}>
                         <ul calss="nav">
+                            {/*顶部菜单跳转*/}
                             <li class="nav-cell">
-                                <a href="/">
+                                <Link to='/1'>
                                     Threads
-                                </a>
+                                </Link>
                             </li>
                             <li class="nav-cell">
-                                <a href="/categories/">
+                                <Link to='/'>
                                     Categories
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-cell">
-                                <a href="/categories/">
+                                <Link to='/2'>
                                     Categories
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-cell">
-                                <a href="/categories/">
+                                <Link to='/'>
                                     Categories
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                 </div>
@@ -56,10 +57,10 @@ export default class SearchHead extends React.Component{
                     <div className="hero-head ">
                         <nav className="navbar has-shadow">
                             <div className="container">
-                                <div className="navbar-brand">
+                                <div className="navbar-bran">
                                     {this.props.logo}
                                 </div>
-                                <div className={"navbar-item is-expanded"}>
+                                <div className={"is-expanded container navbar-item "}>
                                     <SearchBar/>
                                 </div>
                                 <div id="navbarMenuHeroA" className="navbar-menu">
