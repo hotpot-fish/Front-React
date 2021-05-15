@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {Button} from 'antd'
-// import "../../CSS/searchhead.css"
+import {Button,Menu} from 'antd'
+import "../../CSS/searchhead.css"
 import {SearchOutlined} from '@ant-design/icons'
 class SearchBar extends React.Component{
     constructor(props) {
@@ -11,22 +11,40 @@ class SearchBar extends React.Component{
     render()
     {
         return(
-            <div className="columns">
-                <div className="column">
+            <div className="columns" >
+                <div calss="container navbar-nav" style={{height:'45px' }}>
+                        <ul calss="nav">
+                            {/*顶部菜单跳转*/}
+                            <li class="nav-cell">
+                                <Link to='/1'>
+                                    Threads
+                                </Link>
+                            </li>
+                            <li class="nav-cell">
+                                <Link to='/'>
+                                    Categories
+                                </Link>
+                            </li>
+                            <li className="nav-cell">
+                                <Link to='/2'>
+                                    Categories
+                                </Link>
+                            </li>
+                            <li className="nav-cell">
+                                <Link to='/'>
+                                    Categories
+                                </Link>
+                            </li>
+                        </ul>
                 </div>
-                <div className="column">
-                    <div className={"field is-grouped"}>
-                        <input className="input is-danger is-inverted" type="text"  style={{width: '40rem' ,height:'45px'}} placeholder="search papers from all fields of science"/>
-                        {/*<button className="button is-danger">Search</button>*/}
-                        <Button  id="SearchButton"  type="primary" shape="round" icon={<SearchOutlined />}  danger>Search</Button>
-                    </div>
-                </div>
-                <div className="column">
+                <div className="search_div" >
+                        <input className="input is-danger is-inverted" type="text"  style={{width: '60%' ,height:'45px'}} placeholder="search papers from all fields of science"/>
+                        <Button  id="SearchButton"  type="primary" shape="round" icon={<SearchOutlined />}   danger>Search</Button>
                 </div>
             </div>
         );
     }
-}
+};
 
 
 export default class SearchHead extends React.Component{
@@ -39,10 +57,10 @@ export default class SearchHead extends React.Component{
                     <div className="hero-head ">
                         <nav className="navbar has-shadow">
                             <div className="container">
-                                <div className="navbar-brand">
+                                <div className="navbar-bran">
                                     {this.props.logo}
                                 </div>
-                                <div className={"navbar-item is-expanded"}>
+                                <div className={"is-expanded container navbar-item "}>
                                     <SearchBar/>
                                 </div>
                                 <div id="navbarMenuHeroA" className="navbar-menu">

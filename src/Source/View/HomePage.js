@@ -1,20 +1,25 @@
+/*
+writer : DJW
+date   : 2021/5/15
+ **/
 import React from 'react';
+import lo from "../../Pic/logo.png";
 import SearchHead from "../Components/searchhead";
-import lo from "../../Pic/logo.png"
 import {Logo} from "../Components/logo";
-import ThreeFrame from "../Containers/threeframe";
+import ThreadsBoard from "../Containers/ThreadsBoard";
 
 const logo_info={
     img_src:lo,
 }
-export default class ThreeView extends React.Component {
+
+export default class HomePage extends React.Component {
     render()
     {
         return(
             <div>
                 <SearchHead logo={<Logo logo={logo_info} />}
                 />
-                <ThreeFrame />
+                <ThreadsBoard></ThreadsBoard>
             </div>
         );
     }

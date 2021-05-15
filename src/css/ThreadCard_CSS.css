@@ -1,0 +1,114 @@
+
+
+
+
+/*头像部分*/
+.Avatar_div{
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-top: 3px;
+}
+
+.posterAvatar{
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.ThreadCard{
+
+    width: 100%;
+    height: 110px;
+    vertical-align: center;
+
+}
+
+
+
+
+/*内容部分*/
+.ThreadMes{
+    margin-left: 20px;
+    width: 60%;
+    height: 70px;
+    float: left;
+}
+
+.ThreadTitle{
+    font-size: 25px;
+    font-family: "Signika", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: grey;
+}
+.Tags{
+    width: 100%;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.Tag-Item{
+    float: left;
+    height: 10px;
+    font-size: 12px;
+    font-weight: 30;
+    color: darkgray;
+}
+
+.Type{
+    /*分类*/
+    width:25% ;
+}
+.Acess{
+    /*权限*/
+    width: 35%;
+}
+
+.Replication{
+    /*回复数*/
+    width: 15%;
+}
+
+
+
+
+/*评论部分*/
+
+.Replier_Mes{
+    width: 29%;
+    height: 60px;
+    float: left;
+}
+
+.Replier_Avatar_div{
+    margin-left: 15%;
+    width: 60px;
+    float: left;
+}
+
+.Replication_Mes{
+    margin-top: 0px;
+    float: left;
+    margin-left: 5%;
+}
+
+.ReplierName{
+    padding-top: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    height: 40px;
+
+}
+
+.ReplierDate{
+    height: 20px;
+    color: darkgray;
+}
+
+
+@media screen and (max-width:1000px ) {
+    .ThreadCard {
+        width: 800px;
+
+    }
+}
