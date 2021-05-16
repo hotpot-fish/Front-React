@@ -1,14 +1,24 @@
 .site-layout-content{
     /*background-color: #61dafb;*/
-    width: 90%;
+    width: 80%;
     margin:auto;
 }
 
 .PageHead{
     width: 100%;
-    background-color: aliceblue;
+    background-color: rgba(0,0,0,0.02);
     height: 140px;
 }
+
+.PageHead-Title{
+    height: 140px;
+    line-height: 140px;
+    font-size: 50px;
+    font-family: "Unica One", Arial, Helvetica, sans-serif;
+    color: gray;
+    padding-left: 10%;
+}
+
 
 .ContentHead{
     width: 100%;
@@ -18,9 +28,18 @@
 
 
 
+.showButton-div{
+    width: 80%;
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 30px;
+}
 
 
-
-
+.showButton{
+    width: 10%;
+    height: 40px;
+    background-color: ghostwhite;
+}
 
 

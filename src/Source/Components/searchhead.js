@@ -16,22 +16,22 @@ class SearchBar extends React.Component{
                         <ul calss="nav">
                             {/*顶部菜单跳转*/}
                             <li class="nav-cell">
-                                <Link to='/1'>
+                                <Link to="/1">
                                     Threads
                                 </Link>
                             </li>
                             <li class="nav-cell">
-                                <Link to='/'>
+                                <Link to='/Homepage'>
                                     Categories
                                 </Link>
                             </li>
                             <li className="nav-cell">
-                                <Link to='/2'>
+                                <Link to="/2">
                                     Categories
                                 </Link>
                             </li>
                             <li className="nav-cell">
-                                <Link to='/'>
+                                <Link to='/Categories'>
                                     Categories
                                 </Link>
                             </li>

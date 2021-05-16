@@ -13,11 +13,12 @@ export default class App extends React.Component {
     return (
         <HashRouter>
           <Switch>
-              <Route exact  path={"/"} component={HomePage} />
+
               <Route exact  path={"/1"} component={SearchView}/>
               <Route exact path={"/2"} component={login} />
               <Route exact path={"/3"} component={ThreeView} />
-              <Redirect from={"/"} to={"/"}></Redirect>
+              <Route exact  path={"/"} component={HomePage} />
+              <Redirect from={"/*"} to={"/"}></Redirect>
           </Switch>
         </HashRouter>
     );

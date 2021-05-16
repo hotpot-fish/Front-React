@@ -14,11 +14,6 @@ const logo_info = {
 export default class SearchView extends React.Component {
     render() {
         return (
-            // <div>
-            //     <SearchHead logo={<Logo logo={logo_info} />}
-            //     />
-            //     <PaperFrame/>
-            // </div>
 
 
             <div>
