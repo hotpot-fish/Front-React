@@ -41,6 +41,14 @@
     font-weight: bold;
     color: grey;
 }
+
+.ThreadTitleLink{
+    color:grey
+}
+.ThreadTitleLink:hover{
+    color: darkgray;
+    text-decoration:underline
+}
 .Tags{
     width: 100%;
     margin-right: 10px;

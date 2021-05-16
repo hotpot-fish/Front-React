@@ -5,59 +5,44 @@ date   : 2021/5/15
 
 import React from 'react';
 import "../../CSS/ThreadsBoard_CSS.css"
-import { Layout} from 'antd';
+import {Button, Layout, Pagination} from 'antd';
 import ThreadCard from "../Components/ThreadCard";
 
-const { Content} = Layout;
-export default class ThreadsBoard extends React.Component{
+const {Content} = Layout;
+export default class ThreadsBoard extends React.Component {
     constructor(props) {
         super(props);
+        this.state={
+            threads:this.props.Threads
+        }
     }
 
     render() {
-        return(
+        return (
             <div>
-                <Content style={{ padding: '0 50px' }}>
+                <Content >
                     <div className="PageHead">
-
+                        {/*顶部title部分*/}
+                        <p className="PageHead-Title">Team-Salt</p>
                     </div>
 
+
+                    {/*content部分*/}
                     <div className="site-layout-content">
-                        <div className="ContentHead">
+                        {/*留一片头部*/}
+                        <div className="ContentHead">留一片头部</div>
+                        {/*卡片部分*/}
+                        <ThreadCard Threads={this.state.threads}></ThreadCard>
+                        {/*底部分页*/}
+                    </div>
 
-                        </div>
-
-                        <ThreadCard></ThreadCard>
-                        {/*<Card  bordered={true} className="ThreadCard">*/}
-
-                        {/*    <div className="Avatar">*/}
-                        {/*        <img src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"></img>*/}
-                        {/*    </div>*/}
-                        {/*    <div className="ThreadMes">*/}
-                        {/*        <div className="ThreadTitle"><p>First Thread</p></div>*/}
-                        {/*        <div className="Tags">*/}
-                        {/*            <div className="Tag-Item Type">News</div>*/}
-                        {/*            <div className="Tag-Item Acess">Secret</div>*/}
-                        {/*            <div className="Tag-Item Replication">0 replies</div>*/}
-                        {/*        </div>*/}
-                        {/*    </div>*/}
-                        {/*</Card>*/}
-
-                        {/*<Card  bordered={true} className="ThreadCard">*/}
-                        {/*    <p>Card content</p>*/}
-                        {/*    <p>Card content</p>*/}
-                        {/*    <p>Card content</p>*/}
-                        {/*</Card>*/}
-                        {/*<Card  bordered={true} className="ThreadCard">*/}
-                        {/*    <p>Card content</p>*/}
-                        {/*    <p>Card content</p>*/}
-                        {/*    <p>Card content</p>*/}
-                        {/*</Card>*/}
+                    {/*showmore*/}
+                    <div className={"showButton-div"}>
+                        <Button className={"showButton"}>show more</Button>
                     </div>
                 </Content>
+
             </div>
         )
     }
-
-
 }

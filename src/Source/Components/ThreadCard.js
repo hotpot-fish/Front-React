@@ -19,7 +19,7 @@ function cards(props) {
 
                     {/*内容部分*/}
                     <div className="ThreadMes">
-                        <div className="ThreadTitle"><p>{item.title}</p></div>
+                        <div className="ThreadTitle"><a href="" className="ThreadTitleLink" ><p>{item.title}</p></a></div>
                         <div className="Tags">
                             <div className="Tag-Item Type">{item.Type}</div>
                             <div className="Tag-Item Acess">{item.Access}</div>
@@ -54,42 +54,9 @@ function cards(props) {
 export default class ThreadCard extends React.Component {
     constructor(props) {
         super(props);
+
         this.state = {
-            threads: [
-                {
-                    id: 0,
-                    title: "First Thread!",
-                    Type: "News",
-                    Access: "Scret",
-                    Replication: 100,
-                    posterAvatar: "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
-                    replier: "WZR",
-                    replierAvatar: "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
-                    date: "2 years ago"
-                },
-                {
-                    id: 0,
-                    title: "First Thread!",
-                    Type: "News",
-                    Access: "Scret",
-                    Replication: 100,
-                    posterAvatar: "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
-                    replier: "WZR",
-                    replierAvatar: "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
-                    date: "2 years ago"
-                },
-                {
-                    id: 0,
-                    title: "First Thread!",
-                    Type: "News",
-                    Access: "Scret",
-                    Replication: 100,
-                    posterAvatar: "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
-                    replier: "WZR",
-                    replierAvatar: "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
-                    date: "2 years ago"
-                }
-            ]
+            threads: props.Threads
         }
     }
 
