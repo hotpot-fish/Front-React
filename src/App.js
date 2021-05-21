@@ -7,7 +7,7 @@ import ThreeView from "./Source/View/Threeview";
 import {HashRouter, Route,Redirect} from "react-router-dom";
 import {Switch} from "react-router";
 import HomePage from "./Source/View/HomePage";
-
+import ThreadDetalView from "./Source/View/ThreadDetalView";
 export default class App extends React.Component {
   render() {
     return (
@@ -18,6 +18,7 @@ export default class App extends React.Component {
               <Route exact path={"/2"} component={login} />
               <Route exact path={"/3"} component={ThreeView} />
               <Route exact  path={"/"} component={HomePage} />
+              <Route exact path={"/thread/:id"} component={ThreadDetalView} />
               <Redirect from={"/*"} to={"/"}></Redirect>
           </Switch>
         </HashRouter>

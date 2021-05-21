@@ -6,7 +6,7 @@ import React from 'react';
 import reactDom from 'react';
 import "../../CSS/ThreadCard_CSS.css";
 import {Card} from 'antd';
-
+import { Link } from 'react-router-dom';
 
 function cards(props) {
     const d = props.map((item) => {
@@ -19,7 +19,7 @@ function cards(props) {
 
                     {/*内容部分*/}
                     <div className="ThreadMes">
-                        <div className="ThreadTitle"><a href="" className="ThreadTitleLink" ><p>{item.title}</p></a></div>
+                        <div className="ThreadTitle"><Link to={"/thread/"+item.id} className="ThreadTitleLink" ><p>{item.title}</p></Link></div>
                         <div className="Tags">
                             <div className="Tag-Item Type">{item.Type}</div>
                             <div className="Tag-Item Acess">{item.Access}</div>
