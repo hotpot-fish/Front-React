@@ -10,7 +10,8 @@ import { Link } from 'react-router-dom';
 
 function cards(props) {
     const d = props.map((item) => {
-            return (<Card bordered={true} className="ThreadCard" key={item.id}>
+            return (
+                <Card bordered={true} className="ThreadCard" key={item.id}>
 
                     {/*头像部分*/}
                     <div className="Avatar_div">

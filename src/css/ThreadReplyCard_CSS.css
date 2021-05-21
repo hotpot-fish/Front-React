@@ -2,3 +2,90 @@
 writer : DJW
 date   : 2021/5/20
  **/
+
+
+.ThreadRepluCard{
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border-width: 2px;
+    padding-top: 0;
+}
+
+.ReplierAvatar_div{
+    width: 25%;
+    background-color: #61dafb;
+    float:left;
+    margin-top: -5px;
+    border-radius: 5px;
+}
+
+.ReContent{
+    float: left;
+    width: 75%;
+    margin-top: -10px;
+}
+
+.ReplierAvatar{
+    width: 30%;
+    float: left;
+}
+
+.ReplierMess{
+    width: 70%;
+    float: left;
+    background-color: white;
+    padding-left: 6%;
+    font-size: 13px;
+}
+
+#ReplierName{
+    margin-top: 3px;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+.replierMess{
+    color: rgb(124,134,154);
+}
+
+.ReplicationMes{
+
+    float: left;
+}
+
+.REContentHeader{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.REplyDate{
+    float: left;
+    font-size: 15px;
+    line-height: 30px;
+}
+.Menu{
+    border-radius: 5px;
+
+
+    float: right;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(186,189,203);
+    cursor: pointer;
+    padding: 5px 5px;
+}
+
+.Menu:hover{
+    /*border: 10px #61dafb;*/
+    border: solid;
+    border-width: 1px;
+    padding: 4px 4px;
+}
+
+
