@@ -4,7 +4,7 @@
 
 <!-- vscode-markdown-toc -->
 * 1. [**About This Repo**](#AboutThisRepo)
-* 2. [**Update Your branch**](#UpdateYourBranch)
+* 2. [**Update Your Branch When Start Coding**](#UpdateYourBranchWhenStartCoding)
 * 3. [**Make A Pull-Request**](#MakeAPull-Request)
 * 4. [**Standards**](#Standards)
 
@@ -31,7 +31,9 @@ git pull
 git branch -a
 ```
 
-##  2. <a name='UpdateYourBranch'></a>**Update Your Branch**
+
+
+##  2. <a name='UpdateYourBranchWhenStartCoding'></a>**Update Your Branch When Start Coding**
 
 
 ```shell
@@ -39,6 +41,15 @@ git checkout develop
 git pull
 git checkout XXX-feature
 git merge develop
+
+######################################################
+# If there are conflicts 
+git status
+# Then you can see all conflicts.Resolve them.Then:
+git add .
+git commit -m 'xxxx'
+######################################################
+
 ```
 
 ##  3. <a name='MakeAPull-Request'></a>**Make A Pull-Request**
